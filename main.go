@@ -11,7 +11,7 @@ import (
 	"golang.org/x/sys/unix"
 )
 
-const ROUTES = 10000
+const ROUTES = 15000
 
 func getRoutes() (routes []netlink.Route, err error) {
 	routes, err = netlink.RouteListFiltered(netlink.FAMILY_V4, &netlink.Route{Table: unix.RT_TABLE_UNSPEC}, netlink.RT_FILTER_TABLE)
