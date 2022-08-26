@@ -1,0 +1,7 @@
+[*.go]
+indent_size = 4
+indent_style = tab
+
+[*.[ch]]
+indent_size = 8
+indent_style = tab
